@@ -25,7 +25,7 @@ import (
 
 type GithubRepository struct {
 	AuthKey string `json:"authKey,omitempty"`
-	Url     string `json:"url,omitempty"`
+	URL     string `json:"url,omitempty"`
 }
 
 // ServerlessConfigurationSpec defines the desired state of ServerlessConfiguration
@@ -33,7 +33,7 @@ type ServerlessConfigurationSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	ConfigMapName    string           `json:"configmapName,omitempty"`
+	FunctionPrefix   string           `json:"commonPrefix,omitempty"`
 	GithubRepository GithubRepository `json:"githubRepository,omitempty"`
 }
 

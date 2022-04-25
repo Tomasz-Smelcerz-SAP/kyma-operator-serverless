@@ -37,7 +37,7 @@ spec:
             description: ServerlessConfigurationSpec defines the desired state of
               ServerlessConfiguration
             properties:
-              configmapName:
+              commonPrefix:
                 type: string
               githubRepository:
                 properties:
