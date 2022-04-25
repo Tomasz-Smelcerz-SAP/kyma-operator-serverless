@@ -23,14 +23,18 @@ import (
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
+type GithubRepository struct {
+	AuthKey string `json:"authKey,omitempty"`
+	Url     string `json:"url,omitempty"`
+}
+
 // ServerlessConfigurationSpec defines the desired state of ServerlessConfiguration
 type ServerlessConfigurationSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of ServerlessConfiguration. Edit serverlessconfiguration_types.go to remove/update
-	Foo             string `json:"foo,omitempty"`
-	DeploymentLabel string `json:"deploymentLabel,omitempty"`
+	ConfigMapName    string           `json:"configmapName,omitempty"`
+	GithubRepository GithubRepository `json:"githubRepository,omitempty"`
 }
 
 // ServerlessConfigurationStatus defines the observed state of ServerlessConfiguration

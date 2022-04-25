@@ -37,12 +37,15 @@ spec:
             description: ServerlessConfigurationSpec defines the desired state of
               ServerlessConfiguration
             properties:
-              deploymentLabel:
+              configmapName:
                 type: string
-              foo:
-                description: Foo is an example field of ServerlessConfiguration. Edit
-                  serverlessconfiguration_types.go to remove/update
-                type: string
+              githubRepository:
+                properties:
+                  authKey:
+                    type: string
+                  url:
+                    type: string
+                type: object
             type: object
           status:
             description: ServerlessConfigurationStatus defines the observed state
