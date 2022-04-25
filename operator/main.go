@@ -31,6 +31,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
+	serverlessApi "github.com/Tomasz-Smelcerz-SAP/kyma-operator-serverless/k8s-api/api/v1alpha1"
 	"github.com/Tomasz-Smelcerz-SAP/kyma-operator-serverless/operator/controllers"
 	//+kubebuilder:scaffold:imports
 )
@@ -42,6 +43,7 @@ var (
 
 func init() {
 	utilruntime.Must(clientgoscheme.AddToScheme(scheme))
+	utilruntime.Must(serverlessApi.AddToScheme(scheme))
 
 	//+kubebuilder:scaffold:scheme
 }

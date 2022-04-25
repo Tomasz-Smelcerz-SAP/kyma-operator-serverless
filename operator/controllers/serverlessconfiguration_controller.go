@@ -19,6 +19,7 @@ package controllers
 import (
 	"context"
 
+	serverlessApi "github.com/Tomasz-Smelcerz-SAP/kyma-operator-serverless/k8s-api/api/v1alpha1"
 	"k8s.io/apimachinery/pkg/runtime"
 	ctrl "sigs.k8s.io/controller-runtime"
 	"sigs.k8s.io/controller-runtime/pkg/client"
@@ -45,10 +46,11 @@ type ServerlessConfigurationReconciler struct {
 // For more details, check Reconcile and its Result here:
 // - https://pkg.go.dev/sigs.k8s.io/controller-runtime@v0.11.0/pkg/reconcile
 func (r *ServerlessConfigurationReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
-	_ = log.FromContext(ctx)
+	logger := log.FromContext(ctx)
 
 	// TODO(user): your logic here
 
+	logger.Info("Reconciling:", "object", req.String())
 	return ctrl.Result{}, nil
 }
 
@@ -57,5 +59,6 @@ func (r *ServerlessConfigurationReconciler) SetupWithManager(mgr ctrl.Manager) e
 	return ctrl.NewControllerManagedBy(mgr).
 		// Uncomment the following line adding a pointer to an instance of the controlled resource as an argument
 		// For().
+		For(&serverlessApi.ServerlessConfiguration{}).
 		Complete(r)
 }
