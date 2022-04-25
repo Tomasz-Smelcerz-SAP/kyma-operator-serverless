@@ -1,0 +1,20 @@
+# permissions for end users to view serverlessconfigurations.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: serverlessconfiguration-viewer-role
+rules:
+- apiGroups:
+  - kyma.kyma-project.io
+  resources:
+  - serverlessconfigurations
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - kyma.kyma-project.io
+  resources:
+  - serverlessconfigurations/status
+  verbs:
+  - get
