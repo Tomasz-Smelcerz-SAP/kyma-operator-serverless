@@ -63,6 +63,10 @@ github.com/PuerkitoBio/purell v1.1.1/go.mod h1:c11w/QuzBsJSee3cPx9rAFu61PvFxuPbt
 github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578/go.mod h1:uGdkoq3SwY9Y+13GIhn11/XLaGBb4BfwItxLd5jeuXE=
 github.com/Tomasz-Smelcerz-SAP/kyma-operator-serverless/k8s-api v0.0.0-20220425075341-e0e5ce7f12ac h1:xwY8oF7MF9zwTAT10OZqGcjTuMcSKjNXs29W8ZlFD+M=
 github.com/Tomasz-Smelcerz-SAP/kyma-operator-serverless/k8s-api v0.0.0-20220425075341-e0e5ce7f12ac/go.mod h1:k7k6ybVqtRqbSPjn5nMCgTJ5WgwEOKLbiR6vSSm96Kc=
+github.com/Tomasz-Smelcerz-SAP/kyma-operator-serverless/k8s-api v0.0.0-20220425094319-19a73fd969ca h1:BH+gqG0wrlvlqc+r2po2KVvcXJBr+fz84QPbstB1LGg=
+github.com/Tomasz-Smelcerz-SAP/kyma-operator-serverless/k8s-api v0.0.0-20220425094319-19a73fd969ca/go.mod h1:k7k6ybVqtRqbSPjn5nMCgTJ5WgwEOKLbiR6vSSm96Kc=
+github.com/Tomasz-Smelcerz-SAP/kyma-operator-serverless/k8s-api v0.0.0-20220425133141-03c9ee46755f h1:UsPWWjk0uoBeyTdHslJzU8VvIDWYlCF/Gmq/DUbkAm4=
+github.com/Tomasz-Smelcerz-SAP/kyma-operator-serverless/k8s-api v0.0.0-20220425133141-03c9ee46755f/go.mod h1:k7k6ybVqtRqbSPjn5nMCgTJ5WgwEOKLbiR6vSSm96Kc=
 github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=
 github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=
 github.com/alecthomas/units v0.0.0-20151022065526-2efee857e7cf/go.mod h1:ybxpYRFXyAe+OPACYpWeL0wqObRcbAqCMya13uyzqw0=
